@@ -176,3 +176,98 @@
 //	printf("%d\n", y);
 //	return 0;
 //}
+
+//int main()
+//{
+//	int arr[5] = { 0 };
+//	int i = 0,sum=0;
+//	for (i = 0; i < 5; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//		sum += arr[i];
+//	}
+//	double ave = sum * 1.0 / 5;
+//	printf("%.1f\n", ave);
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	char ch;
+//	scanf("%c", &ch);
+//	if (ch >= 65 && ch <= 91 || ch >= 97 && ch <= 123)
+//		printf("YES\n");
+//	else
+//		printf("NO\n");
+//	return 0;
+//}
+
+//int main()
+//{
+//	double wei, hei,BMI;
+//	scanf("%lf%lf", &wei, &hei);// 如果你用了 double ，那么 %lf 才是对的，%f是错的
+//	BMI = wei / (hei * hei);
+//	if (BMI >= 18.5 && BMI <= 23.9)
+//		printf("Normal\n");
+//	else
+//		printf("Abnormal\n");
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	//int arr[4] = { 0 };//整型数组中是否可以放入浮点数？
+//	//int i = 0;		 //你最好不要这么干
+//	double val;
+//	int mon, date, tic;
+//	scanf("%lf%d%d%d", &val, &mon, &date, &tic);
+//	if (mon == 11)
+//	{
+//		val *= 0.7;
+//		if (tic == 1)
+//		{
+//			val -= 50;
+//			if (val > 0)
+//				printf("%.2f\n", val);
+//			else
+//				printf("0.00\n");
+//		}
+//		else
+//			printf("%.2f\n", val);
+//	}
+//	else if (mon  == 12)
+//	{
+//		val *= 0.8;
+//		if (tic == 1)
+//		{
+//			val -= 50;
+//			if (val > 0)
+//				printf("%.2f\n", val);
+//			else
+//				printf("0.00\n");
+//		}
+//		else
+//			printf("%.2f\n", val);
+//	}
+//	return 0;
+//}
+
+int main()
+{
+	int i = 10000;
+	for (i = 10000; i <= 99999; i++)
+	{
+		int j = 10,sum=0;
+		for (j = 10; j <= 10000; j=j * 10)// j*10 未赋值 给 j ，无法判断是否 继续进入循环
+		{
+			sum += (i / j) * (i % j);
+		}
+		if (sum == i)
+		{
+			printf("%d ", sum);
+		}
+	}
+	return 0;
+}
