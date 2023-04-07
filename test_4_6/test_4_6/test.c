@@ -415,32 +415,13 @@
 
 int main()
 {
-	int n, m, arr[100] = {0};
-	scanf("%d %d", &n, & m);
+	int n, m, arr[100] = { 0 };
+	scanf("%d %d", &n, &m);
 	//int total = n * m;// 5*6 =30 
 
 	/*for (int i = 0; i < n*m; i++)
 		scanf("%d", &arr[i]);*/
 
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; i < m; j++)
-		{
-			scanf("%d", &arr[i]);
-			printf("%d ", arr[i]);
-		}
-		printf("\n");
-		//printf("\n");
-		//printf("\n");
-	}
-	return 0;
-}
-int main()
-{
-	int n = 0;
-	int m = 0;
-	int arr[100] = { 0 };
-	scanf("%d %d", &n, &m);
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < m; j++)
@@ -449,7 +430,26 @@ int main()
 			printf("%d ", arr[i]);
 		}
 		printf("\n");
+		
 	}
 
 	return 0;
 }
+//int main()
+//{
+//	int n = 0;
+//	int m = 0;
+//	int arr[100] = { 0 };
+//	scanf("%d %d", &n, &m);
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = 0; j < m; j++)
+//		{
+//			scanf("%d", &arr[i]);
+//			printf("%d ", arr[i]);
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
