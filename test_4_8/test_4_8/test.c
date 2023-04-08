@@ -534,3 +534,9 @@
 //	return 0;
 //}
 
+int main()
+{
+	int j;
+	while(scanf("%d",&j)==1);
+	return 0;
+}
