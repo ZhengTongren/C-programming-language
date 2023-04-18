@@ -238,3 +238,49 @@
 //	
 //	return 0;
 //}
+
+
+//int main()
+//{
+//    int i = 0;
+//    int count = 0;
+//    for (i = 1; i <= 2019; i++)
+//    {
+//        while (i)
+//        {
+//            if (i % 10 == 9)
+//            {
+//                count++;
+//                break;
+//            }
+//            i /= 10;
+//        }
+//    }
+//    printf("%d\n", count);
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int i = 0;
+//    int count = 0;
+//    for (i = 1; i <= 2019; i += 1)
+//    {
+//        int m = i;
+//        while (m)
+//        {
+//            if (m % 10 == 9)
+//            {
+//                count++;
+//                break;
+//            }
+//            m /= 10;
+//        }
+//    }
+//    printf("%d\n", count);
+//    return 0;
+//}
+
