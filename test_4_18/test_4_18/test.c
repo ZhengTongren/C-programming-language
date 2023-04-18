@@ -72,3 +72,62 @@
 //	}
 //	return 0;
 //}
+
+
+#include <stdio.h>
+
+//int main()
+//{
+//    int n = 0;
+//    int arr[50] = { 0 };
+//    scanf("%d", &n);
+//    for (int i = 0; i < n; i++)
+//    {
+//        scanf("%d", &arr[i]);
+//    }
+//
+//    for (int i = 0; i < n - 1; i++)
+//        for (int j = 0; j < n - 1 - i; j++)
+//        {
+//            if (arr[j] < arr[j + 1])
+//            {
+//                int tmp = arr[j];
+//                arr[j] = arr[j + 1];
+//                arr[j + 1] = tmp;
+//            }
+//        }
+//
+//    for (int i = 0; i < 5; i++)
+//        printf("%d ", arr[i]);
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//#include<string.h>
+//
+//int main()
+//{
+//    char ch = 0;
+//
+//
+//    int ca = 0;
+//    int cb = 0;
+//
+//    while ((ch = getchar()) != '0')
+//    {
+//        if (ch == 'A')
+//            ca++;
+//        else if (ch == 'B')
+//            cb++;
+//    }
+//    if (ca > cb)
+//        printf("A\n");
+//    else if (cb > ca)
+//        printf("B\n");
+//    else if (ca == cb)
+//        printf("E\n");
+//    return 0;
+//}
+
+
