@@ -9,7 +9,7 @@
 
 
 //猜数字小游戏源码
-
+//
 //void menu()
 //{
 //	
@@ -36,7 +36,7 @@
 //		else
 //		{
 //			printf("Good!\n");
-//			Sleep(1500);
+//			Sleep(2000);
 //			system("cls");
 //			break;
 //		}
@@ -82,10 +82,52 @@
 //
 //	return 0;
 //}
+//
+//
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int a = 0;
+//    int b = 0;
+//    int c = 0;
+//    int d = 0;
+//    scanf("%d %d %d %d", &a, &b, &c, &d);
+//    if (a < b)
+//        a = b;
+//    if (a < c)
+//        a = c;
+//    if (a < d)
+//        a = d;
+//    printf("%d\n", a);
+//    return 0;
+//}
 
 
-
-
-
-
-
+//#include<math.h>
+//
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	int flag = 1;
+//	for (i = 101; i <= 200; i+=2)
+//	{
+//		for (j = 2; j < sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				flag = 0;
+//				break;
+//			}
+//		}
+//
+//		if (flag == 1)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//
+//	return 0;
+//}
