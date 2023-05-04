@@ -47,3 +47,32 @@
 
 
 
+//#include<stdio.h>
+//
+//int main()
+//{
+//    int a = 1234;
+//    printf("%#o", a);
+//
+//    return 0;
+//}
+
+
+//int main()
+//{
+//    int a = 1234;
+//    printf("%#x", a);
+//
+//    return 0;
+//}
+//
+
+#include<stdio.h>
+
+int main()
+{
+    int a = 1234;
+    printf("%#o ", a);
+    printf("%#X\n", a);
+    return 0;
+}
