@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+#define ROW 9
+#define COL 9 
+
+#define ROWS ROW+2
+#define COLS COL+2
+
+#define EASY_COUNT 80
+
+//初始化棋盘
+void InitBoard(char board[ROWS][COLS], int row, int col, char ch);
+//打印棋盘
+void DisplayBoard(char board[ROWS][COLS], int row, int col);
+//布置雷
+void SetMine(char board[ROWS][COLS], int row, int col);
+//排查雷
+void FindMine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col);
+//计算排查坐标周围雷的个数
+int GetMineCount(char board[ROWS][COLS], int x, int y);
