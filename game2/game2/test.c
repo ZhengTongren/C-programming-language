@@ -19,11 +19,11 @@ void game()
 	InitBoard(mine, ROWS, COLS, '0');
 	InitBoard(show, ROWS, COLS, '*');
 	//打印棋盘
-	DisplayBoard(mine, ROW, COL);
+	//DisplayBoard(mine, ROW, COL);
 	DisplayBoard(show, ROW, COL);
 	//随机生成雷
 	SetMine(mine, ROW, COL);
-	DisplayBoard(mine, ROW, COL);
+	//DisplayBoard(mine, ROW, COL);
 	
 	//排查雷
 	FindMine(mine, show, ROW, COL);
