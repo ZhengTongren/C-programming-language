@@ -98,3 +98,80 @@
 //}
 
 
+//int main()
+//{
+//	int y = 0;
+//	int m = 0;
+//	int d = 0;
+//	scanf("%4d%2d%2d", &y, &m, &d);
+//	printf("year=%d\nmonth=%02d\ndate=%02d\n", y, m, d);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("a=%d,b=%d", &a, &b);
+//	int tmp = a;
+//	a = b;
+//	b = tmp;
+//	printf("a=%d,b=%d\n", a, b);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	char ch = 0;
+//	scanf("%c", &ch);
+//	printf("%d\n", ch);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//	int ret = a % b;
+//	a /= b;
+//	printf("%d %d\n", a, ret);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int c = 0;
+//	int d = 0;
+//	scanf("%1d%1d%1d%1d", &a, &b, &c, &d);
+//	printf("%d%d%d%d\n", d, c, b, a);
+//	return 0;
+//}
+
+
+//void rev(int n)
+//{
+//	//1234 123 4  12 3 4
+//	if (n > 9)
+//	{
+//		printf("%d", n % 10);
+//		rev(n / 10);
+//	}
+//	else
+//		printf("%d", n);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	rev(n);
+//	return 0;
+//}
+
+
