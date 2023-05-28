@@ -36,3 +36,49 @@
 //}
 
 
+//#define MAX 10
+//
+//int Sum(int List[], int n)
+//{
+//	int sum = 0;
+//	for (int i = 0; i < n; i++)
+//		sum += List[i];
+//	return sum;
+//}
+//
+//int main()
+//{
+//	int N = 0;
+//	scanf("%d", &N);
+//	int List[MAX] = { 0 };
+//	for(int i = 0; i < N; i++)
+//		scanf("%d", &List[i]);
+//	int s = Sum(List, N);
+//	printf("%d\n", s);
+//	return 0;
+//}
+
+
+//typedef float ElementType;
+//
+//ElementType Ave(ElementType arr[], int n)
+//{
+//	ElementType a = 0.0f;
+//	for (int i = 0; i < n; i++)
+//		a += arr[i];
+//	return a / n;
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	ElementType arr[10] = { 0.0f };
+//	for (int i = 0; i < n; i++)
+//		scanf("%f", &arr[i]);
+//	ElementType ave = Ave(arr, n);
+//	printf("%.2f", ave);
+//	return 0;
+//}
+
+
