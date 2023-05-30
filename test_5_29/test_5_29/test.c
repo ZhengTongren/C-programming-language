@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+﻿#define _CRT_SECURE_NO_WARNINGS 1
 
 #include<stdio.h>
 #include<limits.h>
@@ -48,41 +48,62 @@ typedef float ElementType;
 //	return 0;
 //}
 
-#include<string.h>
+//#include<string.h>
+//
+//void reverse(char* start, char* cur)
+//{
+//	while (start < cur)
+//	{
+//		int tmp = *start;
+//		*start = *cur;
+//		*cur = tmp;
+//		start++;
+//		cur--;
+//	}
+//}
+//
+//int main()
+//{
+//	char ch[101] = { 0 };
+//	//fgets(ch, 100, stdin);
+//	gets(ch);
+//	int len = strlen(ch);
+//
+//	reverse(ch, ch + len - 1);
+//
+//	char* start = ch;
+//	char* cur = ch;
+//	while (*cur)
+//	{
+//		while (*cur != ' ' && *cur != '\0')
+//		{
+//			cur++;
+//		}
+//		reverse(start, cur-1);
+//		start = cur + 1;
+//		if (*cur != '\0')
+//			cur++;
+//	}
+//	printf("%s\n", ch);
+//	return 0;
+//}
 
-void reverse(char* start, char* cur)
-{
-	while (start < cur)
-	{
-		int tmp = *start;
-		*start = *cur;
-		*cur = tmp;
-		start++;
-		cur--;
-	}
-}
 
-int main()
-{
-	char ch[101] = { 0 };
-	fgets(ch, 100, stdin);
-	int len = strlen(ch);
+//#include<stdio.h>
+//int main() 
+//{	long long a, b; 
+//	scanf("%lld %lld", & a, & b); 
+//	long long s;
+//	for (int i = 1;; i++) 
+//	{ 
+//		if (a * i % b == 0) 
+//		{ 
+//			s = a * i; 
+//			break; 
+//		}
+//	}
+//	printf("%lld\n", s);
+//	return 0;
+//}
 
-	reverse(ch, ch + len - 1);
 
-	char* start = ch;
-	char* cur = start;
-	while (*cur)
-	{
-		while (*cur != ' ' && *cur != '\0')
-		{
-			cur++;
-		}
-		reverse(start, cur);
-		start = cur + 1;
-		if (*cur != '\0')
-			cur++;
-	}
-	printf("%s\n", ch);
-	return 0;
-}
