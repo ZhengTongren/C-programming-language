@@ -174,3 +174,66 @@
 //}
 
 
+//int main()
+//{
+//	int a = 10;
+//	int* pa = &a;
+//	int* pb = pa;
+//	printf("%p\n", pa);
+//	printf("%p\n", pb);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int* p = &arr[0];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		*p = i;
+//		p++;
+//	}
+//
+//	for (int i = 0; i < 10; i++)
+//		printf("%d ", arr[i]);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int* p = arr;
+//	for (int i = 0; i < 10; i++)
+//		*(p + i) = i;
+//
+//	for (int i = 0; i < 10; i++)
+//		printf("%d ", *p++);
+//
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,0 };
+//	for (int i = 0; i < 10; i++)
+//		printf("%d ", i[arr]);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	a = a ^ b;
+//	b = a ^ b;
+//	a = a ^ b;
+//	printf("%d %d\n", a, b);
+//
+//	return 0;
+//}
+
+
