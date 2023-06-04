@@ -278,3 +278,78 @@
 //}
 
 
+//#include <stdio.h>
+//int main()
+//{
+//    int i = 0;
+//    int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//    for (i = 0; i <= 12; i++)
+//    {
+//        arr[i] = 0;
+//        printf("hello bit\n");
+//    }
+//    return 0;
+//}
+
+
+//err
+//void fun1(int arr[],int sz)
+//{
+//	
+//	for (int i = 0; i < sz; i++)
+//	{
+//		if (arr[i] % 2 == 0)
+//		{
+//			for (int j = i + 1; j < sz; j++)
+//			{
+//				if (arr[j] % 2)
+//				{
+//					int tmp = arr[j];
+//					arr[j] = arr[i];
+//					arr[i] = arr[j];
+//					break;
+//				}
+//			}
+//		}
+//	}
+//}
+
+
+//void fun1(int arr[], int n, int arr2[])
+//{
+//	int c1 = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		if (arr[i] % 2)
+//		{
+//			arr2[c1] = arr[i];
+//			c1++;
+//		}
+//	}
+//	int c2 = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		if (arr[i] % 2 == 0)
+//		{
+//			arr2[c1 + c2] = arr[i];
+//			c2++;
+//		}
+//	}
+//	for (int i = 0; i < n; i++)
+//	{
+//		arr[i] = arr2[i];
+//	}
+//}
+//
+//int main()
+//{
+//	int arr[10] = { 0,1,2,3,4,5,6,7,8,9 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int arr2[10] = { 0 };
+//	fun1(arr,sz,arr2);
+//	for (int i = 0; i < sz; i++)
+//		printf("%d ", arr[i]);
+//	return 0;
+//}
+
+
