@@ -214,3 +214,67 @@
 //}
 
 
+//typedef struct Stu
+//{
+//    char name[20];
+//    int age;
+//    char sex[5];
+//} Stu;
+////typedef 把 struct Stu 命名为 Stu
+//
+//int main()
+//{
+//    struct Stu s1;
+//    Stu s2;//可以直接用 Stu 创建结构体变量
+//    return 0;
+//}
+
+
+//int main()
+//{
+//	return 0;
+//}
+
+
+
+
+//{
+//	//20 10 5 2 1
+//	if (n / 2)
+//		return n + fun1(n / 2);
+//	else
+//		return n;
+//}
+//
+//int main()
+//{
+//	int n = 20;
+//	//scanf("%d", &n);
+//	int ret = fun1(n);
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int money = 0;
+//	int total = 0;
+//	int empty = 0;
+//
+//
+//	scanf("%d", &money);
+//
+//	//方法1
+//	total = money;
+//	empty = money;
+//	while (empty > 1)
+//	{
+//		total += empty / 2;
+//		empty = empty / 2 + empty % 2;
+//	}
+//	printf("%d", total);
+//
+//	return 0;
+//}
+
+
