@@ -18,23 +18,34 @@
 //	char ch10[10];
 //}arr;
 
+//int Compare(char ch1[], char ch2[])
+//{
+//	int c1 = 0;
+//	int c2 = 0;
+//	for (int i = 0; i < 10; i++)
+//	{
+//		if (ch1[i])
+//			c1++;
+//		if (ch2[i])
+//			c2++;
+//	}
+//	if (c1 > c2)
+//		return 1;
+//	else if (c2 > c1)
+//		return 2;
+//	else
+//		return 0;
+//}
+
 int Compare(char ch1[], char ch2[])
 {
-	int c1 = 0;
-	int c2 = 0;
 	for (int i = 0; i < 10; i++)
 	{
-		if (ch1[i])
-			c1++;
-		if (ch2[i])
-			c2++;
+		if (ch1[i] > ch2[i])
+			return 1;
+		else if (ch1[i] < ch2[i])
+			return 2;
 	}
-	if (c1 > c2)
-		return 1;
-	else if (c2 > c1)
-		return 2;
-	else
-		return 0;
 }
 
 void Swap(char ch1[], char ch2[])
