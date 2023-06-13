@@ -37,67 +37,67 @@
 //		return 0;
 //}
 
-int Compare(char ch1[], char ch2[])
-{
-	for (int i = 0; i < 10; i++)
-	{
-		if (ch1[i] > ch2[i])
-			return 1;
-		else if (ch1[i] < ch2[i])
-			return 2;
-	}
-}
-
-void Swap(char ch1[], char ch2[])
-{
-	for (int i = 0; i < 10; i++)
-	{
-		char tmp = ch1[i];
-		ch1[i] = ch2[i];
-		ch2[i] = tmp;
-	}
-}
-
-void New_bubble(char ch[], int n, int k)
-{
-	for (int i = 0; i < k; i++)
-	{
-		for (int j = 0; j < n - i - 1; j++)
-		{
-			int ret = Compare(&ch[j * 10], &ch[(j + 1) * 10]);
-			if (ret == 1)
-				Swap(&ch[j * 10], &ch[(j + 1) * 10]);
-		}
-	}
-}
-
-int main()
-{
-	int n = 0;
-	int k = 0;
-	scanf("%d %d", &n, &k);
-
-	
-	getchar();
-	char ch[100] = { 0 };
-	for (int i = 0; i < n; i++)
-	{
-		fgets(ch + i * 10, 10, stdin);
-	}
-
-	
-	New_bubble(ch, n, k);
-
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < 10; j++)
-		{
-			if (ch[i * 10 + j])
-				printf("%c", ch[i * 10 + j]);
-			
-		}
-	}
-	return 0;
-}
+//int Compare(char ch1[], char ch2[])
+//{
+//	for (int i = 0; i < 10; i++)
+//	{
+//		if (ch1[i] > ch2[i])
+//			return 1;
+//		else if (ch1[i] < ch2[i])
+//			return 2;
+//	}
+//}
+//
+//void Swap(char ch1[], char ch2[])
+//{
+//	for (int i = 0; i < 10; i++)
+//	{
+//		char tmp = ch1[i];
+//		ch1[i] = ch2[i];
+//		ch2[i] = tmp;
+//	}
+//}
+//
+//void New_bubble(char ch[], int n, int k)
+//{
+//	for (int i = 0; i < k; i++)
+//	{
+//		for (int j = 0; j < n - i - 1; j++)
+//		{
+//			int ret = Compare(&ch[j * 10], &ch[(j + 1) * 10]);
+//			if (ret == 1)
+//				Swap(&ch[j * 10], &ch[(j + 1) * 10]);
+//		}
+//	}
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	int k = 0;
+//	scanf("%d %d", &n, &k);
+//
+//	
+//	getchar();
+//	char ch[100] = { 0 };
+//	for (int i = 0; i < n; i++)
+//	{
+//		fgets(ch + i * 10, 10, stdin);
+//	}
+//
+//	
+//	New_bubble(ch, n, k);
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = 0; j < 10; j++)
+//		{
+//			if (ch[i * 10 + j])
+//				printf("%c", ch[i * 10 + j]);
+//			
+//		}
+//	}
+//	return 0;
+//}
 
 
