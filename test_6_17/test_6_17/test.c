@@ -71,3 +71,17 @@
 //}
 
 
+//int main()
+//{
+//	int a = 1;
+//	int b = 1;
+//	printf("%d%d=%d", +a, +b, a + b);
+//	return 0;
+//}
+
+
+int main()
+{
+
+	return 0;
+}
