@@ -80,8 +80,51 @@
 //}
 
 
-int main()
-{
+//int main()
+//{
+//	float a1 = 0.0f, b1 = 0.0f;
+//	float a2 = 0.0f, b2 = 0.0f;
+//	scanf("%f %f %f %f", &a1, &b1, &a2, &b2);
+//	
+//
+//	return 0;
+//}
 
-	return 0;
-}
+
+//int main()
+//{
+//	float a1 = 0.0f, b1 = 0.0f;
+//	float a2 = 0.0f, b2 = 0.0f;
+//	scanf("%f %f %f %f", &a1, &b1, &a2, &b2);
+//	char cal[4] = { '+','-','*','/' };
+//	float a[4] = { 0.0f };
+//	float b[4] = { 0.0f };
+//	a[0] = a1 + a2, b[0] = b1 + b2;
+//	a[1] = a1 - a2, b[1] = b1 - b2;
+//	a[2] = a1 * a2 - b1 * b2, b[2] = a1 * b2 + a2 * b1;
+//	a[3] = (a1 * a2 + b1 * b2) / (a2 * a2 + b2 * b2), b[3] = (a2 * b1 - a1 * b2) / (a2 * a2 + b2 * b2);
+//
+//	for (int i = 0; i < 4; i++)
+//	{
+//		if (a[i] > -0.05 && a[i]<0.05 && b[i]>-0.05 && b[i] < 0.05)
+//		{
+//			printf("(%.1f%+.1fi) %c (%.1f%+.1fi) = 0.0\n", a1, b1, cal[i], a2, b2);
+//		}
+//		else if (a[i] > -0.05 && a[i] < 0.05)
+//		{
+//			printf("(%.1f%+.1fi) %c (%.1f%+.1fi) = %.1fi\n", a1, b1, cal[i], a2, b2, b[i]);
+//		}
+//		else if (b[i] > -0.05 && b[i] < 0.05)
+//		{
+//			printf("(%.1f%+.1fi) %c (%.1f%+.1fi) = %.1f\n", a1, b1, cal[i], a2, b2, a[i]);
+//		}
+//		else
+//		{
+//			printf("(%.1f%+.1fi) %c (%.1f%+.1fi) = %.1f%+.1fi\n", a1, b1, cal[i], a2, b2, a[i], b[i]);
+//		}
+//	}
+//
+//	return 0;
+//}
+
+
