@@ -23,7 +23,7 @@ void game()
 	DisplayBoard(show, ROW, COL);
 	//随机生成雷
 	SetMine(mine, ROW, COL);
-	//DisplayBoard(mine, ROW, COL);
+	DisplayBoard(mine, ROW, COL);
 	
 	//排查雷
 	FindMine(mine, show, ROW, COL);
