@@ -1,22 +1,27 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
+
 #include "contact.h"
 
 
 void menu()
 {
-	printf("********************************\n");
-	printf("**** 1. add       2. del    ****\n");
-	printf("**** 3. search    4. modify ****\n");
-	printf("**** 5. show      6. sort   ****\n");
-	printf("**** 0. exit                ****\n");
-	printf("********************************\n");
+	printf("******************************************\n");
+	printf("******  1. Add         2. Del       ******\n");
+	printf("******  3. Modify      4. Search    ******\n");
+	printf("******  5. Show        6. Sort      ******\n");
+	printf("******  0. Exit                     ******\n");
+	printf("******************************************\n");
 }
 
-void test()
+
+
+
+void Test()
 {
 	int input = 0;
 	Contact con;
+
 	InitContact(&con);
 
 	do
@@ -24,21 +29,28 @@ void test()
 		menu();
 		printf("请输入:>");
 		scanf("%d", &input);
+
 		switch (input)
 		{
-		case ADD:
+		case Add:
+			AddContact(&con);
 			break;
-		case DEL:
+		case Del:
+			DelContact(&con);
 			break;
-		case SEARCH:
+		case Modify:
+			ModifyContact(&con);
 			break;
-		case MODIFY:
+		case Search:
+			SearchContact(&con);
 			break;
-		case SHOW:
+		case Show:
+			ShowContact(&con);
 			break;
-		case SORT:
+		case Sort:
+			SortContact(&con);
 			break;
-		case EXIT:
+		case Exit:
 			break;
 		default:
 			printf("输入错误，请重新输入\n");
@@ -49,6 +61,6 @@ void test()
 
 int main()
 {
-	test();
+	Test();
 	return 0;
 }
