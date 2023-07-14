@@ -141,3 +141,86 @@
 //}
 
 
+//enum Color
+//{
+//	Red,
+//	Green,
+//	Blue
+//};
+//
+//int main()
+//{
+//	enum Color col = Red;
+//
+//	col = 5;
+//	return 0;
+//}
+
+
+//union Un
+//{
+//	char c;
+//	int i;
+//};
+//
+//int main()
+//{
+//	union Un un;
+//	printf("%d", sizeof(un));
+//	return 0;
+//}\
+
+
+//union Un
+//{
+//	char c;
+//	int i;
+//};
+
+//int main()
+//{
+//	union Un un;
+//	printf("%#x\n", &un.c);
+//	printf("%#x\n", &un.i);
+//
+//
+//	return 0;
+//}
+
+
+//union Un
+//{
+//	char c;
+//	int i;
+//};
+//
+//int main()
+//{
+//	union Un un;
+//	un.i = 0x11223344;
+//	un.c = 0x55;
+//
+//	printf("%#x", un.i);
+//	return 0;
+//}
+
+
+//union Un1
+//{
+//	char c[5];
+//	int i;
+//};
+//union Un2
+//{
+//	short c[7];
+//	int i;
+//};
+//
+//int main()
+//{
+//	printf("%d\n", sizeof(union Un1));
+//	printf("%d\n", sizeof(union Un2));
+//	return 0;
+//}
+
+
