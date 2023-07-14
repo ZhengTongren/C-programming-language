@@ -51,6 +51,7 @@ void Test()
 			SortContact(&con);
 			break;
 		case Exit:
+			printf("退出通讯录\n");
 			break;
 		default:
 			printf("输入错误，请重新输入\n");
