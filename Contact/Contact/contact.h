@@ -12,6 +12,9 @@
 #define MAX_ADDR 30
 
 
+#define DEFAULT_SZ 3
+#define INC_SZ 2
+
 enum OPTION
 {
 	Exit,
@@ -45,12 +48,21 @@ typedef struct PeoInfo
 
 
 //定义通讯录
+
+//静态 
+//typedef struct Contact
+//{
+//	PeoInfo data[MAX];
+//	int sz;
+//}Contact;
+
+//动态
 typedef struct Contact
 {
-	PeoInfo data[MAX];
+	PeoInfo* data;
 	int sz;
+	int capacity;
 }Contact;
-
 
 
 //初始化通讯录
