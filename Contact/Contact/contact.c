@@ -46,12 +46,23 @@ void InitContact(Contact* pc)
 //}
 
 
+//¶¯Ì¬
 int CheckCapcity(Contact* pc)
 {
 	if (pc->capacity == pc->sz)
 	{
 		PeoInfo* ptr = (PeoInfo*)realloc(pc->data, (pc->capacity + INC_SZ) * sizeof(PeoInfo));
-		
+		if (ptr == NULL)
+		{
+			perror("realloc");
+			return 0;
+		}
+		else
+		{
+			pc->data = ptr;
+			pc->capacity += INC_SZ;
+			return 1;
+		}
 	}
 }
 
