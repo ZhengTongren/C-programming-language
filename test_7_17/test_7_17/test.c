@@ -111,52 +111,52 @@
 #include <stdlib.h>
 #include <string.h>
 
-int my_strlen(const char* a)
-{
-	int len = 0;
-	while (*(a+len))
-	{
-		len++;
-	}
-	return len;
-}
-
-void my_strnat(char* d, char* s, int num)
-{
-	int len1 = my_strlen(d);
-
-	int len2 = my_strlen(s);
-	len2 = len2 < num ? len2 : num;
-
-	char* ptr = (char*)malloc(len2 + len1 + 1);
-	if (NULL == ptr)
-	{
-		perror("realloc");
-		return;
-	}
-	for (int i = 0; i < len1; i++)
-	{
-		ptr[i] = d[i];
-	}
-	for (int i = 0; i < len2; i++)
-	{
-		ptr[len1 + i] = s[i];
-	}
-	ptr[len2 + len1] = '\0';
-	d = ptr;
-	ptr = NULL;
-	printf("%d\n", strlen(d));
-}
-
-int main()
-{
-	char d[] = "abcd";
-	char s[] = "efg";
-	my_strnat(d, s, 5);
-	printf("%s\n", d);
-
-	return 0;
-}
+//int my_strlen(const char* a)
+//{
+//	int len = 0;
+//	while (*(a+len))
+//	{
+//		len++;
+//	}
+//	return len;
+//}
+//
+//char* my_strncat(char* d, char* s, int num)
+//{
+//	int len1 = my_strlen(*d);
+//
+//	int len2 = my_strlen(s);
+//	len2 = len2 < num ? len2 : num;
+//
+//	char** ptr = (char**)malloc(len2 + len1 + 1);
+//	if (NULL == ptr)
+//	{
+//		perror("realloc");
+//		return;
+//	}
+//	for (int i = 0; i < len1; i++)
+//	{
+//		ptr[i] = d[i];
+//	}
+//	for (int i = 0; i < len2; i++)
+//	{
+//		ptr[len1 + i] = s[i];
+//	}
+//	ptr[len2 + len1] = '\0';
+//	d = ptr;
+//	ptr = NULL;
+//	return d;
+//}
+//
+//int main()
+//{
+//	char d[] = "abcd";
+//	char s[] = "efg";
+//	my_strncat(d, s, 5);
+//	printf("%s\n", d);
+//
+//	return 0;
+//}
 
 
 //#include <stdio.h>
@@ -180,6 +180,59 @@ int main()
 //	char b[] = "abcdef";
 //	a = b;
 //	printf("%s", a);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	FILE* pf = fopen("test.txt", "w");
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	FILE* pf = fopen("test.txt", "w");
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//
+//	for (int i = 0; i < 26; i++)
+//	{
+//		fputc('a' + i, pf);
+//	}
+//
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	FILE* pf = fopen("test.txt", "w");
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//
+//	fputs("abcedef\n", pf);
+//	fputs("I am going to SpaceX.\n", pf);
+//
+//	fclose(pf);
+//	pf = NULL;
 //	return 0;
 //}
 

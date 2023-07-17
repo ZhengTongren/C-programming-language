@@ -11,6 +11,30 @@
 //	pc->sz = 0;
 //}
 
+
+int CheckCapcity(Contact* pc);
+
+
+void LoadContact(Contact* pc)
+{
+	FILE* pf = fopen("Contact.text", "rb");
+	if (NULL == pf)
+	{
+		perror("LoadContact");
+		return;
+	}
+	PeoInfo tmp = { 0 };
+	while (fread(&tmp, sizeof(PeoInfo), 1, pf))
+	{
+		CheckCapcity(pc);
+		pc->data[pc->sz] = tmp;
+		pc->sz++;
+	}
+	fclose(pf);
+	pf = NULL;
+}
+
+
 //动态
 void InitContact(Contact* pc)
 {
@@ -18,6 +42,8 @@ void InitContact(Contact* pc)
 	pc->data = (PeoInfo*)malloc(sizeof(PeoInfo) * DEFAULT_SZ);
 	pc->sz = 0;
 	pc->capacity = DEFAULT_SZ;
+
+	LoadContact(pc);
 }
 
 
@@ -61,6 +87,7 @@ int CheckCapcity(Contact* pc)
 		{
 			pc->data = ptr;
 			pc->capacity += INC_SZ;
+			printf("增容成功\n");
 			return 1;
 		}
 	}
@@ -287,4 +314,25 @@ void ExitContact(Contact* pc)
 	pc->data = NULL;
 	pc->capacity = 0;
 	pc->sz = 0;
+}
+
+
+void SaveContact(Contact* pc)
+{
+	FILE* pf = fopen("Contact.text", "wb");
+	if (pf == NULL)
+	{
+		perror("SaveContact");
+		return;
+	}
+
+	//写文件
+	for (int i = 0; i < pc->sz; i++)
+	{
+		fwrite(pc->data + i, sizeof(PeoInfo), 1, pf);
+	}
+
+	//关闭文件
+	fclose(pf);
+	pf = NULL;
 }

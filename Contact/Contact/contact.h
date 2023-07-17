@@ -89,3 +89,6 @@ void SortContact(Contact* pc);
 
 //释放内存
 void ExitContact(Contact* pc);
+
+//保存通讯录到本地
+void SaveContact(Contact* pc);

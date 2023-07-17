@@ -24,6 +24,7 @@ void Test()
 
 	InitContact(&con);
 
+
 	do
 	{
 		menu();
@@ -51,6 +52,7 @@ void Test()
 			SortContact(&con);
 			break;
 		case Exit:
+			SaveContact(&con);
 			ExitContact(&con);
 			printf("�˳�ͨѶ¼\n");
 			break;
