@@ -51,6 +51,7 @@ void Test()
 			SortContact(&con);
 			break;
 		case Exit:
+			ExitContact(&con);
 			printf("�˳�ͨѶ¼\n");
 			break;
 		default:

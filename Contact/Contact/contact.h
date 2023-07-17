@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
+#include <stdlib.h>
 
 
 #define MAX 100
@@ -84,4 +85,7 @@ void ModifyContact(Contact* pc);
 void SearchContact(const Contact* pc);
 
 //通讯录排序
-void SortContact(const Contact* pc);
+void SortContact(Contact* pc);
+
+//释放内存
+void ExitContact(Contact* pc);

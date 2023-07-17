@@ -64,6 +64,7 @@ int CheckCapcity(Contact* pc)
 			return 1;
 		}
 	}
+	return 1;
 }
 
 
@@ -277,4 +278,13 @@ void SortContact(Contact* pc)
 			}
 		}
 	}
+}
+
+
+void ExitContact(Contact* pc)
+{
+	free(pc->data);
+	pc->data = NULL;
+	pc->capacity = 0;
+	pc->sz = 0;
 }
