@@ -237,3 +237,89 @@
 //}
 
 
+#include <string.h>
+
+
+//char* my_strncat(char* dest, const char* src, int n)
+//{
+//	int len = strlen(dest);
+//	int i = 0;
+//	
+//	for (int i = 0; i < n; i++)
+//	{
+//		*(dest + len + i) = *(src + i);
+//	}
+//	*(dest + len + n) = '\0';
+//	return dest;
+//
+//}
+//
+//
+//int main()
+//{
+//	char a[] = "i like ";
+//	char b[] = "beijing.";
+//	my_strncat(a, b, 5);
+//	printf("%s", a);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<string.h>
+
+
+//char* Strncat(char* str1, const char* str2, int size) {
+//	int n = strlen(str1);
+//	int i = 0;
+//	while (*(str1 + n + i) = *(str2 + i)) 
+//	{
+//		str1++;
+//		str2++;
+//
+//		if (i == size) {
+//			*(str1 + n + i) = 0;
+//			break;
+//		}
+//	}
+//	return str1;
+//}
+//int main() {
+//	char str1[12] = "abcde";
+//	char str2[] = "fghijk";
+//	printf("str1为:\n%s\n", str1);
+//	printf("str2为:\n%s\n", str2);
+//	Strncat(str1, str2, 6);
+//	printf("str1连接str2后为:\n%s\n", str1);
+//	system("pause");
+//	return 0;
+//}
+
+
+//char* my_strncat(char* dest, const char* src, int n)
+//{
+//	int len1 = strlen(dest);
+//	int len2 = strlen(src);
+//
+//	int i = 0;
+//	
+//	for (int i = 0; i < n; i++)
+//	{
+//		*(dest + len1 + i) = *(src + i);
+//	}
+//	*(dest + len1 + n) = '\0';
+//	return dest;
+//}
+//
+//
+//int main()
+//{
+//	char a[20] = "i like ";
+//	char b[20] = "beijing.";
+//	my_strncat(a, b, 5);
+//	printf("%s", a);
+//	return 0;
+//}
+
+
