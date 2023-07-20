@@ -69,3 +69,147 @@
 //}
 
 
+//int main()
+//{
+//	char ch1[20] = { 0 };
+//
+//	sprintf
+//	return 0;
+//}
+
+
+
+//#include <stdio.h>
+//
+//struct S
+//{
+//	int a;
+//	float f;
+//};
+//
+//int main()
+//{
+//	struct S s = { 20,3.14f };
+//	char ch1[20] = { 0 };
+//
+//	sprintf(ch1, "%d %f", s.a, s.f);
+//	printf("%d %f\n", s.a, s.f);
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//struct S
+//{
+//	int a;
+//	float f;
+//};
+//
+//int main()
+//{
+//	struct S s = { 20,3.14f };
+//	char ch1[20] = { 0 };
+//
+//	sprintf(ch1, "%d %f", s.a, s.f);
+//	printf("%d %f\n", ch1);
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//
+//struct S
+//{
+//	int a;
+//	float f;
+//};
+//
+//
+//int main()
+//{
+//	FILE* pf = fopen("test.txt", "w");
+//
+//	struct S s = { 10,4.14f };
+//	fprintf(pf, "%d %f", s.a, s.f);
+//	fprintf(stdout, "%d %f", s.a, s.f);
+//
+//	fclose(pf);
+//	pf = NULL;
+//
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//
+//struct S
+//{
+//	int a;
+//	float f;
+//};
+//
+//
+//int main()
+//{
+//	FILE* pf = fopen("test.txt", "r");
+//
+//	struct S s = { 0 };
+//	fscanf(pf, "%d %f", &(s.a), &(s.f));
+//	
+//	printf("%d %f", s.a, s.f);
+//	fclose(pf);
+//	pf = NULL;
+//
+//	return 0;
+//}
+
+
+
+//#include <stdio.h>
+//
+//struct S
+//{
+//	int a;
+//	float f;
+//	char c[20];
+//};
+//
+//int main()
+//{
+//	struct S s = { 20, 3.14f, "abcdef" };
+//	char ch1[20] = { 0 };
+//	sprintf(ch1, "%d %f %s", s.a, s.f, s.c);
+//
+//	fprintf(stdout, "%s", ch1);
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//struct S
+//{
+//	int a;
+//	float f;
+//	char c[20];
+//};
+//
+//int main()
+//{
+//	struct S s = { 20, 3.14f, "abcdef" };
+//	char ch1[20] = { 0 };
+//	sprintf(ch1, "%d %f %s", s.a, s.f, s.c);
+//
+//	struct S tmp = { 0 };
+//	sscanf(ch1, "%d %f %s", &tmp.a, &tmp.f, tmp.c);
+//
+//	//fprintf(stdout, "%s", ch1);
+//	fprintf(stdout, "%d %f %s", tmp.a, tmp.f, tmp.c);
+//
+//	return 0;
+//}
+
+
