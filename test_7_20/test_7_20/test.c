@@ -231,3 +231,41 @@
 //}
 
 
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	FILE* pf = fopen("test.txt", "w+");
+//	if (NULL == pf)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//
+//	fputs("abcdefg", pf);
+//
+//	fseek(pf, 0, SEEK_SET);
+//	fflush(pf);
+//
+//	int ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	/*fseek(pf, -3, SEEK_CUR);
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);*/
+//
+//	fseek(pf, -4, SEEK_END);
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	return 0;
+//}
+
+
