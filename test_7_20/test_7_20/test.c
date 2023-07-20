@@ -213,3 +213,21 @@
 //}
 
 
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	FILE* pf = fopen("test.txt", "r");
+//	//这个思维及其重要
+//	if (NULL == pf)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//
+//
+//	return 0;
+//}
+
+
