@@ -78,3 +78,76 @@
 //}
 
 
+//int main()
+//{
+//	FILE* pf = fopen("data.txt", "w+");
+//	if (pf == NULL)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//
+//
+//	fprintf(pf, "abcdefg\n");
+//	fputs("qwere\n", pf);
+//
+//	fseek(pf, 0, SEEK_SET);
+//	fflush(pf);
+//
+//	int ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	int pos = ftell(pf);
+//	printf("%d\n", pos);
+//
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	FILE* pf = fopen("data.txt", "r");
+//
+//	if (NULL == pf)
+//	{
+//		perror("fopen");
+//		return 1;
+//	}
+//
+//	/*fprintf(pf, "abcdefg\n");
+//	fputs("qwere\n", pf);*/
+//
+//	/*fseek(pf, 0, SEEK_SET);
+//	fflush(pf);*/
+//
+//	int ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	/*int pos = ftell(pf);
+//	printf("%d\n", pos);*/
+//
+//	rewind(pf);
+//
+//	ch = fgetc(pf);
+//	printf("%c\n", ch);
+//
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
+
