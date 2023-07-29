@@ -106,6 +106,58 @@
 //	return 0;
 //}
 //
+//
+////int arr[10] - 类型: int [10]
+//
+//void test(char* pc, int arr[10])
+//{
+//
+//}
+//
+//int main()
+//{
+//	void (*pc)(char*, int [10]) = &test;
+//	void (*pf)(char*, int*) = &test;
+//	//void (*)(char*, int*) = &test;//函数指针的类型
+//
+//	return 0;
+//}
 
+
+//int Add(int a, int b)
+//{
+//	return a + b;
+//}
+
+//int main()
+//{
+//	int (*pf)(int ,int) = &Add;// pf 存放 Add函数的地址
+//
+//	int r = Add(3, 5);
+//	printf("%d\n", r);
+//	
+//	int m = (*pf)(4, 5);
+//	printf("%d\n", m);
+//	return 0;
+//}
+
+
+//int Add(int a, int b)
+//{
+//	return a + b;
+//}
+//
+//
+//int main()
+//{
+//	int (*pf)(int, int) = Add;// pf 相当于 Add
+//
+//	int r = Add(3, 5);
+//	printf("%d\n", r);
+//
+//	int m = (pf)(4, 5);
+//	printf("%d\n", m);
+//	return 0;
+//}
 
 
