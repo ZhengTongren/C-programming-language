@@ -159,5 +159,27 @@
 //	printf("%d\n", m);
 //	return 0;
 //}
+//
+//
+//typedef int(*ptr_t)(int*, int*);
+//typedef int(*pf_t)[10];
+//
+//int main()
+//{
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	typedef void(*pf_t)(int);
+//	pf_t signal(int, pf_t);
+//
+//	void (*signal(int, void(*)(int)))(int);
+//	return 0;
+//}
+//
+
+
 
 
