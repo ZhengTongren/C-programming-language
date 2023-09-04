@@ -149,57 +149,79 @@
 //    return 0;
 //}
 
+//
+//#include <stdio.h>
+//#include <string.h>
+//
+//
+//void reverse(char* ch, int len)
+//{
+//    int left = 0;
+//    int right = len - 1;
+//    while (left < right)
+//    {
+//        char tmp = ch[left];
+//        ch[left] = ch[right];
+//        ch[right] = tmp;
+//
+//        left++;
+//        right--;
+//    }
+//}
+//
+//int main()
+//{
+//    char ch[10001] = { 0 };
+//    gets(ch);
+//    int len = strlen(ch);
+//    reverse(ch, len);
+//
+//    int start = 0;
+//    int end = 0;
+//    while (ch[end] != '\0')
+//    {
+//        while ((ch[end] >= 'A' && ch[end] <= 'Z') || (ch[end] >= 'a' && ch[end] <= 'z'))
+//            end++;
+//        reverse(ch + start, end - start);
+//        if (ch[end] != '\0')
+//        {
+//            start = end + 1;
+//            end = start;
+//        }
+//    }
+//    for (int i = 0; i < len; i++)
+//    {
+//        if ((ch[i] >= 'A' && ch[i] <= 'Z') ||
+//            (ch[i] >= 'a' && ch[i] <= 'z'))
+//        {
+//            printf("%c", ch[i]);
+//        }
+//        else
+//        {
+//            printf(" ");
+//        }
+//    }
+//    return 0;
+//}
 
-#include <stdio.h>
-#include <string.h>
+//
+//#include <stdio.h>
+//#include <string.h>
+//
+//int fun(char* s)
+//{
+//	char* t = s;
+//	while (*t++);
+//	return (t - s);
+//}
+//
+//int main()
+//{
+//	char ch[20] = "i like beijing.";
+//
+//	int ret = fun(ch);
+//	int len = strlen(ch);
+//	return 0;
+//}
 
 
-void reverse(char* ch, int len)
-{
-    int left = 0;
-    int right = len - 1;
-    while (left < right)
-    {
-        char tmp = ch[left];
-        ch[left] = ch[right];
-        ch[right] = tmp;
-
-        left++;
-        right--;
-    }
-}
-
-int main()
-{
-    char ch[10001] = { 0 };
-    gets(ch);
-    int len = strlen(ch);
-    reverse(ch, len);
-
-    int start = 0;
-    int end = 0;
-    while (ch[end] != '\0')
-    {
-        while ((ch[end] >= 'A' && ch[end] <= 'Z') || (ch[end] >= 'a' && ch[end] <= 'z'))
-            end++;
-        reverse(ch + start, end - start);
-        if (ch[end] != '\0')
-        {
-            start = end + 1;
-            end = start;
-        }
-    }
-    for (int i = 0; i < len; i++)
-    {
-        if ((ch[i] >= 'A' && ch[i] <= 'Z') ||
-            (ch[i] >= 'a' && ch[i] <= 'z'))
-        {
-            printf("%c", ch[i]);
-        }
-        else
-        {
-            printf(" ");
-        }
-    }
-    return 0;
-}
